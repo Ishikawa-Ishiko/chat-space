@@ -1,0 +1,44 @@
+.ChatMain
+  .RightHeader
+    .RightHeader__group
+      .RightHeader__groupName
+        GruopName
+      %ul.RightHeader__memberList
+        Member : 
+        %li.RightHeader__member
+          UserName
+        %li.RightHeader__member
+          UserName
+    = link_to '#', class: "RightHeader__edit" do
+      Edit
+      
+    
+  .MessageField
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__userName
+          UserName
+        .MessageInfo__date
+          2020/7/18(Sat) 20:00:00
+      .Message
+        .Message__content
+          こんばんは！
+
+    .MessageBox
+      .MessageInfo
+        .MessageInfo__userName
+          UserName
+        .MessageInfo__date
+          2020/7/18(Sat) 20:00:01
+      .Message
+        .Message__content
+          こんばんわ〜
+  
+  .Footer
+    %form.Form
+      .Form__contents
+        %input.Form__inputContent{type: 'text', placeholder: 'type a message'}
+        %label.Form__inputImage
+          = icon('far', 'image', class: 'Form__icon')
+          %input.Hidden{type: 'file'}
+      %input.Form__submit{type: 'submit', value: 'Send'}

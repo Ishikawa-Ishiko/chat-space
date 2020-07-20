@@ -1,0 +1,32 @@
+.SideBar
+  .LeftHeader
+    .LeftHeader__list
+      .LeftHeader__userName
+        UserName
+      %ul.LeftHeader__iconList
+        %li.LeftHeader__Icon
+          = link_to '#' do
+            = icon('fas', 'edit')
+        %li.LeftHeader__Icon
+          = link_to '#' do
+            = icon('fas', 'cog')
+ 
+  .GroupList
+    .Group
+      = link_to '#' do
+        .Group__name
+          GroupName
+        .Group__message
+          NewMessage
+          .Group
+      = link_to '#' do
+        .Group__name
+          GroupName
+        .Group__message
+          NewMessage
+      .Group
+      = link_to '#' do
+        .Group__name
+          GroupName
+        .Group__message
+          NewMessage
