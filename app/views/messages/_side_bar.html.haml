@@ -6,28 +6,17 @@
 
       %ul.LeftHeader__iconList
         %li.LeftHeader__Icon
-          = link_to '#' do
+          = link_to new_group_path do
             = icon('fas', 'edit')
         %li.LeftHeader__Icon
           = link_to edit_user_path(current_user) do
             = icon('fas', 'cog')
  
   .GroupList
-    .Group
-      = link_to '#' do
-        .Group__name
-          GroupName
-        .Group__message
-          NewMessage
-          .Group
-      = link_to '#' do
-        .Group__name
-          GroupName
-        .Group__message
-          NewMessage
+    - current_user.groups.each do |group|
       .Group
-      = link_to '#' do
-        .Group__name
-          GroupName
-        .Group__message
-          NewMessage
+        = link_to '#' do
+          .Group__name
+            = group.name
+          .Group__message
+            メッセージはまだありません
