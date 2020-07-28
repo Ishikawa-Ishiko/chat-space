@@ -62,4 +62,8 @@ $(function() {
   $(".ChatMembers").on("click", ".ChatMember__remove", function() {
     $(this).parent().remove();
   });
+<<<<<<< HEAD
 });z
+=======
+});
+>>>>>>> c1830b5ea6ce35b605394db4a8bb0b6bf218508f
